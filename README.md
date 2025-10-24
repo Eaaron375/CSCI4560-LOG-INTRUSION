@@ -1,5 +1,5 @@
 # CSCI4560-LOG-INTRUSION
-his project demonstrates how database systems can be applied to cybersecurity intrusion detection. We collect and store security log data in MySQL, then analyze it with SQL queries and Python scripts to detect anomalies such as:
+This project demonstrates how database systems can be applied to cybersecurity intrusion detection. We collect and store security log data in MySQL, then analyze it with SQL queries and Python scripts to detect anomalies such as:
 	•	Multiple failed login attempts in a short time
 	•	Logins from unusual IP addresses
 	•	Suspicious activity outside normal working hours
