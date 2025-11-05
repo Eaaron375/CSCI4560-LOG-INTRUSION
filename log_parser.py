@@ -6,7 +6,7 @@ fake = Faker()
 # Connect to MySQL
 conn = mysql.connector.connect(
     host="127.0.0.1",
-    port=3307,  # host-mapped port
+    port=3306,  # host-mapped port
     user="root",
     password="password",
     database="ids_db"
