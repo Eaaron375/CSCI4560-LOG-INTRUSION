@@ -9,10 +9,9 @@ fake = Faker()
 # ---------------------------
 #  CONFIGURE YOUR DATABASE
 # ---------------------------
-DB_CONFIG = 
-{
-    "user":     "root",      # <-- UPDATE
-    "password": "@eaf4i12",  # <-- UPDATE
+DB_CONFIG = {
+    "user":     "root",     
+    "password": "@eaf4i12", 
     "host":     "127.0.0.1",
     "database": "Project"
 }
