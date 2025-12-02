@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta http-equiv="refresh" content="5">  <!-- auto-refresh every 5 seconds -->
+</head>
+<body>
+
+<h1>Security Monitoring Dashboard</h1>
+
+<div class="card">
+    <h2>Total Logs</h2>
+    <p>{{ total_logs }}</p>
+</div>
+
+<div class="card">
+    <h2>Total Alerts</h2>
+    <p>{{ total_alerts }}</p>
+</div>
+
+<h2>Recent Alerts</h2>
+<table>
+    <tr><th>ID</th><th>Type</th><th>Severity</th><th>Time</th></tr>
+    {% for a in recent_alerts %}
+    <tr>
+        <td>{{ a[0] }}</td>
+        <td>{{ a[1] }}</td>
+        <td>{{ a[2] }}</td>
+        <td>{{ a[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2>Blacklisted IPs</h2>
+<table>
+    <tr><th>IP</th><th>Reason</th><th>Date Added</th></tr>
+    {% for row in blacklist %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
