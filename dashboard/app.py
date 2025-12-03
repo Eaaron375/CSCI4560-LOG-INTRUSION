@@ -6,7 +6,7 @@ app = Flask(__name__)
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "@eaf4i12",
+    "password": "PASSWORD",
     "database": "Project"
 }
 
