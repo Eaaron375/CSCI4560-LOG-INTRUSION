@@ -18,7 +18,21 @@ The system performs the following:
 
 This project acts as a small-scale SOC (Security Operations Center) pipeline with ETL-like behavior, IDS logic, and a front-end monitoring panel.
 CSCI4560-LOG-INTRUSION/
-
+│
+├── python/
+│   ├── generate_security_events.py
+│   ├── log_parser.py
+│   ├── anomaly_detector.py
+│   ├── testconnection.py
+│   ├── venv/  (optional)
+│
+├── dashboard/
+│   ├── app.py
+│   ├── templates/
+│   │   └── dashboard.html
+│
+└── mysql/
+    └── schema.sql
 
 Requirements (Windows / macOS / Linux)
 Install Python (3.8+)
@@ -30,6 +44,20 @@ https://dev.mysql.com/downloads/
 
 Ensure MySQL is running.
 Install pip packages
+
+Database Permissions & Configuration (IMPORTANT)
+
+This project connects to a MySQL database using credentials defined inside the Python scripts.
+Because every user has a different MySQL username, password, host, and database name, you MUST update the configuration before running any script.
+Each Python file contains a section similar to:
+DB_CONFIG = 
+{
+    "user": "root",
+    "password": "PASSWORD", 
+    "host": "127.0.0.1",
+    "database": "Project"
+}
+Replace these fields with your own values
 
 1. Clone the Reop
 You will install these later inside the project.\
