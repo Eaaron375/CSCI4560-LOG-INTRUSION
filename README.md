@@ -18,21 +18,7 @@ The system performs the following:
 
 This project acts as a small-scale SOC (Security Operations Center) pipeline with ETL-like behavior, IDS logic, and a front-end monitoring panel.
 CSCI4560-LOG-INTRUSION/
-│
-├── python/
-│   ├── generate_security_events.py
-│   ├── log_parser.py
-│   ├── anomaly_detector.py
-│   ├── testconnection.py
-│   ├── venv/  (optional)
-│
-├── dashboard/
-│   ├── app.py
-│   ├── templates/
-│   │   └── dashboard.html
-│
-└── mysql/
-    └── schema.sql
+
 
 Requirements (Windows / macOS / Linux)
 Install Python (3.8+)
