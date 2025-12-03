@@ -11,7 +11,7 @@ fake = Faker()
 # ---------------------------
 DB_CONFIG = {
     "user":     "root",     
-    "password": "@eaf4i12", 
+    "password": "PASSWORD", 
     "host":     "127.0.0.1",
     "database": "Project"
 }
