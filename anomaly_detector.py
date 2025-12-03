@@ -8,7 +8,7 @@ conn = mysql.connector.connect(
     host="localhost",
     port=3306,
     user="root",
-    password="@eaf4i12",
+    password="PASSWORD",
     database="Project"
 )
 cursor = conn.cursor()
